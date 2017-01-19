@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Node Authentication</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+		<!--angular and ui-router-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+		<!--our angular app-->
+		<script src="app.js"></script>
+		<style>
+	        body        { padding-top:80px; }
+	    </style>
+	</head>
+	<body ng-app="node-auth">
+		<div class="container" ng-controller="mainCtrl as mctrl">
+			<div class="alert alert-success">
+			    {{errorMessage}}
+			</div>
+		    <div ui-view></div>
+		</div>
+	</body>
+</html>

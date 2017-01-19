@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{currentUser.name}}</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class=" col-md-12 col-lg-12 ">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td>{{currentUser.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Username:</td>
+                                    <td> {{currentUser.username}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><a href="mailto:info@support.com"> {{currentUser.email}}</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-danger" ng-click="mctrl.logout()">Logout</button>
+             </div>
+        </div>
+    </div>
+</div>
